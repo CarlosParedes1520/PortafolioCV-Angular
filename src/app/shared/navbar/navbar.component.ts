@@ -16,23 +16,26 @@ constructor(private router: Router) {
 
 
   navegaropcion1(){
-    this.router.navigateByUrl('/page/inicio');
+    this.router.navigateByUrl('#inicio');
     // this.router.navigate(['/', '/page/inicio']);
     // console.log( this.router.navigate(['/', '/page/inicio']));
     // this.valor = '#inicio'
   }
   navegaropcion2(){
-    this.router.navigate(['/', '/page/informacion']);
+    this.router.navigateByUrl('#informacion');
+    
     // console.log(this.router.navigateByUrl('/page/informacion'));
     // this.valor = '#informacion'
   }
   navegaropcion3(){
-    this.router.navigate(['/', '/page/portafolio']);
+    this.router.navigateByUrl('#portafolio');
+
     // console.log(this.router.navigate(['/', 'page/portafolio']));
     // this.valor = '#portafolio'
   }
   navegaropcion4(){
-    this.router.navigate(['/', '/page/contacto']);
+    this.router.navigateByUrl('#contacto');
+   
     // console.log(this.router.navigate(['/', 'page/contacto']));
     // this.valor = '#contacto'
   }

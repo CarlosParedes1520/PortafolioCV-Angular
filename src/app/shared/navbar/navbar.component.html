@@ -22,16 +22,36 @@
             <div class="offcanvas-body bg-dark"  id="navbarSupportedContent" >
                 <ul class="navbar-nav ms-4 ">
                     <li class="nav-item ms-2 liOpcion">
-                        <a #elemento id="inicio" [href]="valor" class="nav-link active text-white text-center  fw-bold opcion" aria-current="page" (click)='scroll(elemento)'>Inicio</a>
+                        <a 
+                        
+                        [routerLink] [fragment]="'inicio'"
+                        [routerLinkActive]="'active'"
+                        [routerLinkActiveOptions]="{exact: true}"
+                        class="nav-link active nav-style text-white text-center  fw-bold opcion"  (click)="navegaropcion1()" >Inicio</a>
                     </li>
                     <li class="nav-item ms-2 liOpcion">
-                        <a #elemento2   id="informacion" [href]="valor"  class="nav-link text-white text-center  fw-bold opcion" (click)='scroll(elemento2)'>Información</a>
+                        <a 
+                      
+                        [routerLink] [fragment]="'informacion'" (click)="navegaropcion2()"
+                        [routerLinkActive]="'active'"
+                        [routerLinkActiveOptions]="{exact: true}"
+                        class="nav-link  active text-white text-center  fw-bold opcion" >Información</a>
                     </li>
                     <li class="nav-item ms-2 liOpcion">
-                        <a #elemento3 id="portafolio" [href]="valor" class="nav-link text-white text-center  fw-bold opcion" (click)='scroll(elemento3)'>Portafolio</a>
+                        <a 
+                
+                        [routerLink] [fragment]="'portafolio'"
+                        [routerLinkActive]="'active'"
+                        [routerLinkActiveOptions]="{exact: true}"
+                        class="nav-link active text-white text-center  fw-bold opcion" 
+                        (click)="navegaropcion3()">Portafolio</a>
                     </li>
                     <li class="nav-item ms-2 liOpcion">
-                        <a #elemento4 id="contacto" [href]="valor"  class="nav-link text-white text-center  fw-bold opcion" (click)='scroll(elemento4)'>Contacto</a>
+                        <a 
+                        [routerLink] [fragment]="'contacto'"
+                        [routerLinkActive]="'active'"
+                        [routerLinkActiveOptions]="{exact: true}"
+                        class="nav-link  active text-white text-center  fw-bold opcion"  (click)="navegaropcion4()" >Contacto</a>
                     </li>
                 </ul>
             </div>
