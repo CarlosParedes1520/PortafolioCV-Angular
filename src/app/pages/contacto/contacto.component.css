@@ -1,0 +1,41 @@
+h1{
+    color: #8B3DFF;
+}
+
+.formulario{
+    background: #8B3DFF;
+    border-radius: 5px;
+}
+
+
+ 
+  
+  input:focus, textarea:focus {
+    box-shadow: 0px 0px 5px 1px rgb(60, 59, 59) !important;
+    /* Cuando se selecciona este elemento crece a 160px */
+  }
+
+.redes-icon{
+    width: 50px;
+    height: 50px;   
+}
+
+a{
+    margin-right: 10px;
+}
+
+a:hover{
+    box-shadow: 0px 0px 5px 1px #8B3DFF !important;
+}
+
+span{
+    color: white!important;
+}
+
+
+
+@media screen and (max-width:576px) {
+ .campo{
+    margin: 2% 2% 2% 2% !important;
+ }
+}
