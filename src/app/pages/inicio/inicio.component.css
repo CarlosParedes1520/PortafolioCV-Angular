@@ -19,9 +19,6 @@ h1{
 
 }
 
-.principal-contenido{
-    width: 500px;
-}
 
 figure  {
    
@@ -40,6 +37,17 @@ figure img{
     width: 100%;
     transition: all .5s ease;
     /* object-fit: cover; */
+}
+
+.principal-contenido  {
+    width: 500px;
+    overflow: hidden;
+}
+.principal-contenido:hover  {
+    transform: scale(1.1);
+}
+.principal-contenido {
+    transition: all .5s ease;
 }
 
 @media screen and (max-width:950px) {
